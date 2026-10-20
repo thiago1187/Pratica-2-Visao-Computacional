@@ -178,7 +178,6 @@ Conforme a política de uso de IA da disciplina (VC001, 2026.2). Declaração ú
 
      > respostas: de uma olhada se esta aceitavel. *(seguido de um rascunho das respostas 1.1 a 5.6 colado pelo grupo)*
 
-     > finalize as minhas respostas continuando a logica e o jeito que escrevi *(seguido do rascunho com trechos em colchetes a completar)*
 
      > as matriculas eu n vou preencher / e as limitacoes poderia dar um exemplo do que preencher? *(seguido da pergunta de Limitações do roteiro)*
 
