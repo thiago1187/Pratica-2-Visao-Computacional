@@ -157,7 +157,8 @@ Conforme a política de uso de IA da disciplina (VC001, 2026.2). Declaração ú
 **Seção A — Uso de LLM / assistente de IA:** **Sim.**
 
 - **Modelo usado:** Claude Sonnet 5.5 (`claude-sonnet-5-5`), por meio do Claude Code (extensão do VS Code).
-- **Prompt utilizado (cópia literal):** foi um único prompt.
+- **Prompts utilizados (cópia literal):**
+  1. Prompt inicial (código, dataset, treino e resultados):
   > vou realizar um trabalho pratico de visão computacional, quero que voce siga as regras do trabalho e me utilize para ter o lado critico e de entendimento teorico. na pasta ja existe oque o professor passou e aqui esta o repositorio inicial do professor: https://github.com/eron93br/vc-20262-p2
   >
   > repositorio que vamos utilizar é o: https://github.com/thiago1187/Pratica-2-Visao-Computacional.git
@@ -168,8 +169,27 @@ Conforme a política de uso de IA da disciplina (VC001, 2026.2). Declaração ú
   > Manuel Galvão (mfgmg@cesar.school)
   >
   > preciso que voce organize com boas praticas o dataset anexado, e treine utilizando AlexNet, VGG16 e ResNet18. apos isso me traga os resultados para eu avaliar os desempenhos e custos computacionais. e no final eu vou analisar os erros e limitacoes (para isso já me traga o necessario para eu analisar). o pdf já esta bem explicativo
+
+  2. Política de IA:
+     > nao sei se percebeu mas coloquei as politicas de uso da IA no trabalho
+
+  3. Prompts de ajuda para o README (respostas às questões e limitações):
+     > me mande tudo que eu preciso para responder as questoe, crie um md com as perguntas e tudo que eu preciso
+
+     > respostas: de uma olhada se esta aceitavel. *(seguido de um rascunho das respostas 1.1 a 5.6 colado pelo grupo)*
+
+     > finalize as minhas respostas continuando a logica e o jeito que escrevi *(seguido do rascunho com trechos em colchetes a completar)*
+
+     > as matriculas eu n vou preencher / e as limitacoes poderia dar um exemplo do que preencher? *(seguido da pergunta de Limitações do roteiro)*
+
+     > eu achei que tudo esta certo, voce so falou demais, e nao teve tanta limitacao assim
+
+     > sim
+
+  4. Prompts operacionais: perguntas sobre o andamento do treino ("quanto tempo para acabar?", "falta quanto", "acabou?"), configuração do email do git e pedido de commit/push sem coautor.
 - **Resposta/trecho gerado incorporado à entrega:** `src/data_pipeline.py`, `src/train_lib.py`, `tools/clean_notebook.py`, `pratica_watermeters.ipynb` (estrutura, células de aquisição, exploração, construção do dataset, treino, avaliação, figuras e diagnóstico de erros), `requirements.txt` e as seções factuais deste README (reprodução, protocolo, tabelas de resultados). A resposta da IA aqui está resumida, pois o código e os textos gerados são extensos e estão nos próprios arquivos do repositório.
-- **Adaptações realizadas pelo grupo:** o grupo conferiu tudo que a IA gerou, olhou os resultados dos treinamentos e checou se os números faziam sentido, incluindo as verificações obrigatórias do dataset e o split sem vazamento. As respostas das questões e a análise de limitações foram feitas pelo grupo (utilizamos a IA apenas para verificar se estavamos com o pensamento correto), usamos a teoria vista em aula e análise e lógica própria em cima dos resultados e das galerias de erros. Durante o desenvolvimento a IA corrigiu sozinha dois defeitos do próprio código, a cabeça que estava só no otimizador da `smallcnn` e impedia o aprendizado, e o pooling adaptativo que não é suportado no MPS, os dois detectados pela inspeção dos resultados.
+- **Resultado do apoio da IA ao README (prompt 3):** (a) um guia local com a pergunta de cada questão, os números do projeto e a teoria envolvida; (b) uma revisão do rascunho do grupo, que apontou frases copiadas do guia, instruções soltas no texto e afirmações não verificadas; (c) o preenchimento dos trechos em colchetes do rascunho, incluindo duas contagens feitas pela IA olhando as imagens (classificação dos 16 erros compartilhados mais confiantes e cerca de 23 de 60 faixas com último dígito meio rolado), além da conferência do `classification_report` para a questão 5.1; (d) um exemplo de seção de Limitações, que o grupo encurtou. O texto final das respostas e das limitações no README incorpora esse material.
+- **Adaptações realizadas pelo grupo:** o grupo conferiu tudo que a IA gerou, olhou os resultados dos treinamentos e checou se os números faziam sentido, incluindo as verificações obrigatórias do dataset e o split sem vazamento. As respostas das questões e as limitações foram escritas a partir de um rascunho do grupo, revisado e completado com apoio da IA (ver prompt 3 e o resultado acima); o grupo conferiu os números contra o `results.csv` e o notebook, revisou as contagens visuais nas galerias de erros e na auditoria das faixas, e finalizou o texto. Durante o desenvolvimento a IA corrigiu sozinha dois defeitos do próprio código, a cabeça que estava só no otimizador da `smallcnn` e impedia o aprendizado, e o pooling adaptativo que não é suportado no MPS, os dois detectados pela inspeção dos resultados.
 
 **Seção B — Uso de skill (Claude Code / SKILL.md):** Não.
 **Seção C — Uso de SDD:** Não.
