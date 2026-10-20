@@ -1,0 +1,14 @@
+# Versões usadas na execução (Python 3.14, macOS, Apple M3 / MPS)
+torch==2.14.1
+torchvision==0.29.1
+opencv-python==5.0.0.93
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pillow==13.0.0
+kagglehub==1.0.2
+jupyter==1.1.1
+nbconvert==7.17.2
+nbformat==5.11.1
+ipykernel==7.4.0

@@ -1,0 +1,13 @@
+# Dados, recortes, checkpoints e credenciais (licença CC BY-NC-ND 4.0: não versionar)
+data/
+digits/
+checkpoints/
+*.pt
+*.pth
+*.zip
+kaggle.json
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+local_outputs/

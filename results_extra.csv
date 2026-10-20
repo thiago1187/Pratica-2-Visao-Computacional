@@ -1,0 +1,5 @@
+model,ms_per_image_cpu,gmacs,epochs_run,train_acc_eval_mode,val_f1_best,total_train_s
+smallcnn,0.9534,0.1159,10,0.9134,0.8722,46.5863
+alexnet,4.6924,0.2508,8,0.9797,0.9006,139.7834
+vgg16_bn,27.7526,5.1309,8,0.972,0.938,2129.9587
+resnet18,6.5275,0.5922,8,0.9958,0.9535,206.8631
